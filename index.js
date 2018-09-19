@@ -101,7 +101,7 @@ class NanoNode extends EventEmitter {
     super();
 
     this.peers = [ 'rai.raiblocks.net:7075' ];
-    this.maxPeers = 200;
+    this.maxPeers = 1000;
     this.tcpTimeout = 4000;
 
     this.client = dgram.createSocket('udp4');
